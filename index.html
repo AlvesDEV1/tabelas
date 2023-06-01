@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./logofut.PNG" type="image/x-icon" />
-    <title>FUTchurras</title>
+    <title>Tabelas</title>
     <style>
         /* scrollbar */
         *::-webkit-scrollbar {
@@ -196,6 +196,26 @@
             padding: 8px;
         }
 
+        table {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            font-weight: bold;
+            padding: 8px;
+            width: 400px;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        .dados {
+            text-align: center;
+            align-items: center;
+        }
+
     </style>
 </head>
 
@@ -245,10 +265,81 @@
             <img class="icon" src="./logotorneio2.png" alt="logo-futchurras" class="logotorneio2">
             <div class="texto-torneio">3º Torneio FUTchurras ⚽</div>
         </nav>
-
+        <h1> <b>Classificação</b></h1>
         <div class="classicacao">
+            <!--
+                    HIERARQUIA DE TABELAS
+                    TABLE = tabela;
+                        TABLE ROW = linha da tabela;
+                            TABLE HEADER = cabeçalho; e
+                                TABLE DATA = dado da tabela.
+            -->
             <table>
-
+                <th>
+                    Times
+                    <td class="dados">P</td>
+                    <td class="dados">J</td>
+                    <td class="dados">V</td>
+                    <td class="dados">E</td>
+                    <td class="dados">D</td>
+                    <td class="dados">SG</td>
+                    <td class="dados">GP</td>
+                    <td class="dados">GC</td>
+                    <td class="dados">NF</td>
+                    <td class="dados">%</td>
+                </th>
+                <tr>
+                    <td>Aravig</td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                </tr>
+                <tr>
+                    <td>Pavilhão 6</td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                </tr>
+                <tr>
+                    <td>PSG</td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                </tr>
+                <tr>
+                    <td>RedBull</td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                    <td class="dados"></td>
+                </tr>
             </table>
         </div>
 

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logofut.PNG" type="image/x-icon" />
+    <title>FUTchurras</title>
+    <style>
+        /* scrollbar */
+        *::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: #f1e9e9;
+            border-radius: 10px
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #411536;
+            border-radius: 10px;
+            border: 3px solid #ffffff;
+        }
+
+        /* body */
+        body {
+            font: normal 16px Arial;
+            margin: 0 auto;
+            background-color: #CEEFF8;
+            color: #333333;
+        }
+
+        /* header */
+        header {
+            font-size: 18px;
+            background: linear-gradient(0deg, rgba(0, 87, 4, 1) 5%, rgba(34, 195, 166, 1) 70%);
+            box-shadow: 0px 5px 10px #411536;
+            max-width: none;
+        }
+
+        header .logo {
+            width: 75px;
+        }
+
+        header .logo:hover {
+            transform: scale(1.10);
+            cursor: pointer;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-link:hover {
+                background-color: rgba(2, 44, 2, 0.678);
+                transform: scale(1.10);
+                cursor: pointer;
+            }
+
+        .nav-item {
+            margin: 0 15px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .login-button button {
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            background-color: #411536;
+
+        }
+
+        .login-button button a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .iconmenu {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width: 730px) {
+            .nav-bar {
+                padding: 1.5rem 4rem;
+            }
+
+            .nav-item {
+                display: none;
+            }
+
+            .nav-link:hover {
+                background-color: rgba(2, 44, 2, 0.678);
+                transform: scale(1.10);
+                cursor: pointer;
+            }
+
+            .login-button {
+                display: none;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .mobile-menu-icon button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            .mobile-menu ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+
+            .mobile-menu .nav-item {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-top: 1.2rem;
+                padding-right: 53px;
+            }
+
+            .mobile-menu .login-button {
+                display: block;
+                padding: 1rem 2rem;
+            }
+
+            .mobile-menu .login-button button {
+                width: 100%;
+            }
+
+            .open {
+                display: block;
+            }
+        }
+
+        /* main */
+        .info {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 8px;
+            box-shadow: 0px 3px 10px #411536;
+            max-width: none;
+        }
+
+        .logotorneio2 {
+            width: 150px;
+            align-items: center;
+        }
+
+        .texto-torneio {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            padding: 8px;
+        }
+
+        .torneio {
+            padding: 40px;
+            padding-left: 300px;
+            display: block;
+            justify-content: space-evenly;
+            padding: 50px;
+            max-width: none;
+            text-align: justify;
+        }
+
+        .torneio h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .diretoria {
+            padding-top: 50px;
+            display: flex;
+            justify-content: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="https://alvesdev1.github.io/futchurras/">
+                <img src="./logofut.PNG" alt="logo-futchurras" class="logo">
+            </a>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="https://alvesdev1.github.io/futchurras/" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item"><a href="https://alvesdev1.github.io/jogos/" class="nav-link">Jogos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tabela</a></li>
+                    <li class="nav-item"><a href="https://alvesdev1.github.io/sobre/" class="nav-link">Sobre</a></li>
+                </ul>
+                <!--
+                <div class="login-button">
+                    <button><a href="https://alvesdev1.github.io/projeto-login/">Entrar</a></button>
+                </div>
+                -->
+            </div>
+
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="iconmenu" src="./mobilemenu.png" alt="mobile menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="https://alvesdev1.github.io/futchurras/" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="https://alvesdev1.github.io/jogos/" class="nav-link">Jogos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Tabela</a></li>
+                <li class="nav-item"><a href="https://alvesdev1.github.io/sobre/" class="nav-link">Sobre</a></li>
+            </ul>
+            <!--
+            <div class="login-button">
+                <button><a href="https://alvesdev1.github.io/projeto-login/">Entrar</a></button>
+            </div>
+            -->
+        </div>
+    </header>
+
+    <main>
+        <nav class="info">
+            <img class="icon" src="./logotorneio2.png" alt="logo-futchurras" class="logotorneio2">
+            <div class="texto-torneio">3º Torneio FUTchurras ⚽</div>
+        </nav>
+
+        <div class="torneio">
+            <h1>VAI COMEÇAR!!</h1>
+            <p>É com grande prazer que o FUTchurras, a melhor pelada do país, vem anunciar o tão aguardado 3º Torneio
+                FUTchurras. Com início marcado para o dia 03/05/2023, esse evento promete reunir equipes apaixonadas
+                pelo esporte e pela diversão em um ambiente descontraído e repleto de churrasco e amizade.</p>
+            <p>O torneio traz uma proposta única: conciliar a paixão pelo futebol com o prazer de um bom churrasco.
+                Afinal, nada melhor do que unir o esporte mais amado pelos brasileiros com um bom churrasco.</p>
+            <p>As 4 equipes: Aravig, PSG, RedBull, e o tão temido "Pavilhão 6", compostas por amigos, colegas de
+                trabalho e familiares, já estão se preparando intensamente para o grande dia. Os jogadores estão
+                treinando seus dribles, passes e chutes, buscando aprimorar suas habilidades para proporcionar partidas
+                emocionantes e disputadas.</p>
+            <p>Os jogos acontecerão durante os finais de semana, proporcionando aos participantes a oportunidade de
+                desfrutar de uma experiência esportiva incrível sem comprometer suas atividades diárias. Os times se
+                enfrentarão em disputas emocionantes, na busca pelos 3 pontos e conquista do tão almejado título.</p>
+            <p>Acesse o calendário de jogos e as tabelas através do menu no canto superior da tela!</p>
+            <p class="diretoria">Att: A Diretoria</p>
+        </div>
+    </main>
+    <script>
+        function menuShow() {
+            var menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.iconmenu').src = "mobilemenu.png";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.iconmenu').src = "closemenu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
